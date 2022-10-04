@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-
 export default function Cuisine() {
     const[cuisine, setCuisine] = useState([]);
     let params = useParams();
