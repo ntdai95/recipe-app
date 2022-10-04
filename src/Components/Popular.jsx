@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Link } from "react-router-dom";
 
@@ -32,10 +32,10 @@ export default function Popular() {
                 <h3>Popular Picks</h3>
                 <Splide options={{
                     perPage: 4,
-                    arrows: false,
+                    arrows: true,
                     pagination: false,
-                    drag: "free",
-                    gap: "5rem",
+                    drag: true,
+                    gap: "5%",
                 }}>
                     {popular.map((recipe) => {
                         return (

@@ -32,10 +32,10 @@ export default function Veggie() {
                 <h3>Our Vegetarian Picks</h3>
                 <Splide options={{
                     perPage: 3,
-                    arrows: false,
+                    arrows: true,
                     pagination: false,
                     drag: "free",
-                    gap: "5rem",
+                    gap: "5%",
                 }}>
                     {veggie.map((recipe) => {
                         return (
