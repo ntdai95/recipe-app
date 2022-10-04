@@ -9,12 +9,13 @@ export default function Search() {
     const submitHandler = (e) => {
         e.preventDefault();
         navigate('/searched/' + input);
+        setInput('');
     };
 
     return (
-        <FormStyle>
+        <FormStyle onSubmit={submitHandler}>
             <div>
-                <FaSearch></FaSearch>
+                <FaSearch />
                 <input onChange={(e) => setInput(e.target.value)} type="text" value={input} />
             </div>
         </FormStyle>
